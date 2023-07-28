@@ -1,0 +1,19 @@
+
+[
+    {
+        "nombre": "Usuarios",
+        "redirect":"/dashboard/usuarios"
+
+    },
+    {
+        "nombre": "Ropa",
+        "redirect":"/dashboard/reportes"
+
+    },
+    {
+        "nombre": "Salir",
+        "redirect":"/"
+
+    }
+
+]

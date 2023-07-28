@@ -1,0 +1,46 @@
+.mat-elevation-z8{
+  width: 100%;
+  margin-top: 2px;
+
+}
+
+.mat-mdc-form-field {
+  margin-top: 10px;
+  font-size: 14px;
+  width: 10%;
+}
+
+th{
+  width: 20%;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+/* Estilos para la tabla */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Estilos para el encabezado de la tabla */
+.table th {
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Estilos para las celdas de la tabla */
+.table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Estilos para los botones en las celdas */
+.table td button {
+  margin-right: 5px;
+}

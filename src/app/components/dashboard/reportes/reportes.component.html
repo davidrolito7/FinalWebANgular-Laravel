@@ -1,0 +1,42 @@
+<button mat-raised-button color="primary" routerLink="/dashboard/crear-ropa">Agregar</button>
+<div class="container-fluid"> 
+  <table class="table mt-4 table-striped table-bordered ">
+      <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Producto</th>
+          <th scope="col">Talla</th>
+          <th scope="col">Color</th>
+          <th scope="col">Precio</th>
+          <!-- <th scope="col">Address</th>
+          <th scope="col">Mobile</th> -->
+      
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let ropa of  myemployee">
+          <th >{{ropa.id}}</th>
+          <th >{{ropa.producto}}</th>
+          <th >{{ropa.talla}}</th>
+          <th >{{ropa.color}}</th>
+          <th >{{ropa.precio}}</th>
+          <!-- <th >{{user.address}}</th>
+          <th >{{user.mobile}}</th> -->
+        
+          
+            <td>
+              <!-- <i routerLink="/watch/view/{{user.id}}" class="fa fa-eye" style="color: orange;" aria-hidden="true"></i> -->
+              <button mat-raised-button color="primary">Editar</button>
+              <!--<button routerLink="/edit/update/{{user.id}}" class="edit-button">Edit</button>-->
+              <!--<button (click)="deleteuser(user)" class="delete-button">Delete</button> -->
+              <button mat-raised-button color="warn" (click)="deleteuser(ropa)" class="delete-button">Eliminar</button>
+            </td>
+  
+          
+        </tr>
+       
+       
+      </tbody>
+    </table>
+  </div>

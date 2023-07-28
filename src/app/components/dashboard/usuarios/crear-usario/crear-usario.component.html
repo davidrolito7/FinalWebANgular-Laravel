@@ -1,0 +1,36 @@
+<mat-card>
+    <mat-card-header>
+        <h1>Crear usuario</h1>
+
+    </mat-card-header>
+
+    <mat-card-content>
+        <form >
+            <mat-form-field class="example-full-width">
+                <mat-label>Usuario</mat-label>
+                <input matInput formControlName="usuario" [(ngModel)]="empy.usuario">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Nombre</mat-label>
+                <input matInput formControlName='nombre' [(ngModel)]="empy.nombre">
+            </mat-form-field>
+
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Correo</mat-label>
+                <input matInput formControlName="correo" [(ngModel)]="empy.correo">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Contraseña</mat-label>
+                <input matInput formControlName="contrasena" type="password" [(ngModel)]="empy.contrasena">
+            </mat-form-field>
+            <button mat-raised-button color="prymari" (click)="add()" type="button"class="btn btn-dark margin-left">AÑADIR</button>
+            <button mat-raised-button color="warn" routerLink="/dashboard/usuarios">Volver</button>
+        </form>
+    </mat-card-content>
+
+
+
+</mat-card>

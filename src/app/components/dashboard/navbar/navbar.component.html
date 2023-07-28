@@ -1,0 +1,47 @@
+<mat-toolbar>
+
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+        <mat-icon>more_vert</mat-icon>
+    </button>
+
+    <mat-menu #menu="matMenu">
+
+        <mat-card>
+            <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>Luis Felipe</mat-card-title>
+                <mat-card-subtitle>Ramirez Arreortua</mat-card-subtitle>
+            </mat-card-header>
+        </mat-card>
+
+        
+        <button mat-menu-item routerLink="/dashboard/inicio">
+            <mat-icon>backup_table</mat-icon>
+            <span>Inicio</span>
+        </button>
+        
+
+        <button mat-menu-item routerLink="/dashboard/usuarios">
+            <mat-icon>people</mat-icon>
+            <span>Usuarios</span>
+        </button>
+
+        
+        <button mat-menu-item routerLink="/dashboard/reportes">
+            <mat-icon>shopping_bag</mat-icon>
+            <span>Ropa</span>
+        </button>
+
+        <button mat-menu-item routerLink="/">
+            <mat-icon>exit_to_app</mat-icon>
+            <span>Salir</span>
+        </button>
+
+    </mat-menu>
+
+    <span>Tienda de ropa Fashion</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon" routerLink="/">
+        <mat-icon>exit_to_app</mat-icon>
+    </button>
+</mat-toolbar>

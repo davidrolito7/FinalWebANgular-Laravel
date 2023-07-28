@@ -1,0 +1,36 @@
+<mat-card>
+    <mat-card-header>
+        <h1>Añadir ropa</h1>
+
+    </mat-card-header>
+
+    <mat-card-content>
+        <form >
+            <mat-form-field class="example-full-width">
+                <mat-label>Producto</mat-label>
+                <input matInput formControlName="usuario" >
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Talla</mat-label>
+                <input matInput formControlName='nombre' >
+            </mat-form-field>
+
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Color</mat-label>
+                <input matInput formControlName="correo" >
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Precio</mat-label>
+                <input matInput formControlName="contrasena">
+            </mat-form-field>
+            <button mat-raised-button color="prymari" type="button"class="btn btn-dark margin-left">Añadir</button>
+            <button mat-raised-button color="warn" routerLink="/dashboard/reportes">Volver</button>
+        </form>
+    </mat-card-content>
+
+
+
+</mat-card>
